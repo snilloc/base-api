@@ -1,0 +1,345 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          controllers/HomeController.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package controllers
+</span>2 <span style=''>
+</span>3 <span style=''>import javax.inject._
+</span>4 <span style=''>import play.api.mvc._
+</span>5 <span style=''>
+</span>6 <span style=''>// Swagger support
+</span>7 <span style=''>import io.swagger.annotations.{Api, ApiParam, ApiResponse, ApiResponses}
+</span>8 <span style=''>
+</span>9 <span style=''>
+</span>10 <span style=''>/**
+</span>11 <span style=''> * This controller creates an `Action` to handle HTTP requests to the
+</span>12 <span style=''> * application's home page.
+</span>13 <span style=''> */
+</span>14 <span style=''>@Singleton
+</span>15 <span style=''>@Api
+</span>16 <span style=''>class HomeController @Inject()(cc: ControllerComponents) extends AbstractController(cc) {
+</span>17 <span style=''>
+</span>18 <span style=''>  /**
+</span>19 <span style=''>   * Create an Action to render an HTML page.
+</span>20 <span style=''>   *
+</span>21 <span style=''>   * The configuration in the `routes` file means that this method
+</span>22 <span style=''>   * will be called when the application receives a `GET` request with
+</span>23 <span style=''>   * a path of `/`.
+</span>24 <span style=''>   */
+</span>25 <span style=''>  @ApiResponses(Array(
+</span>26 <span style=''>    new ApiResponse(code = 400, message = &quot;Invalid ID supplied&quot;),
+</span>27 <span style=''>    new ApiResponse(code = 404, message = &quot;Pet not found&quot;)))
+</span>28 <span style=''>  def index():Action[AnyContent] = </span><span style='background: #AEF1AE'>Action { implicit request: Request[AnyContent] =&gt;
+</span>29 <span style=''></span><span style='background: #AEF1AE'>    Ok(views.html.index())
+</span>30 <span style=''></span><span style='background: #AEF1AE'>  }</span><span style=''>
+</span>31 <span style=''>
+</span>32 <span style=''>
+</span>33 <span style=''>  @ApiResponses(Array(
+</span>34 <span style=''>    new ApiResponse(code = 400, message = &quot;Invalid ID supplied&quot;),
+</span>35 <span style=''>    new ApiResponse(code = 404, message = &quot;Pet not found&quot;)))
+</span>36 <span style=''>  def getPetById( @ApiParam(value = &quot;ID of the pet to fetch&quot;) id: String):Action[AnyContent] = </span><span style='background: #F0ADAD'>Action {
+</span>37 <span style=''></span><span style='background: #F0ADAD'>    implicit request:Request[AnyContent] =&gt;
+</span>38 <span style=''></span><span style='background: #F0ADAD'>      //JsonResponse(new value.ApiResponse(404, &quot;Pet not found&quot;), 404)
+</span>39 <span style=''></span><span style='background: #F0ADAD'>      NotFound(s&quot;Pet not found $id&quot;)
+</span>40 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>41 <span style=''>
+</span>42 <span style=''>  /*
+</span>43 <span style=''>  val petData:String = s&quot;Getting pet id: $id&quot;
+</span>44 <span style=''>  //petData.getPetbyId(getLong(0, 100000, 0, id)) match {
+</span>45 <span style=''>  petData match {
+</span>46 <span style=''>    case Some(pet) =&gt; JsonResponse(pet)
+</span>47 <span style=''>    case _ =&gt; JsonResponse(new value.ApiResponse(404, &quot;Pet not found&quot;), 404)
+</span>48 <span style=''>  } */
+</span>49 <span style=''>
+</span>50 <span style=''>
+</span>51 <span style=''>
+</span>52 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          779
+          -
+          859
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.api.mvc.ActionBuilder.apply
+        </td>
+        <td style="background: #AEF1AE">
+          HomeController.this.Action.apply(((implicit request: play.api.mvc.Request[play.api.mvc.AnyContent]) =&gt; HomeController.this.Ok.apply[play.twirl.api.HtmlFormat.Appendable](views.html.index.apply())(http.this.Writeable.writeableOf_Content[play.twirl.api.HtmlFormat.Appendable](mvc.this.Codec.utf_8, http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8)))))
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          2
+        </td>
+        <td>
+          835
+          -
+          835
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          play.api.mvc.Codec.utf_8
+        </td>
+        <td style="background: #AEF1AE">
+          mvc.this.Codec.utf_8
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          5
+        </td>
+        <td>
+          835
+          -
+          835
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.api.http.LowPriorityWriteables.writeableOf_Content
+        </td>
+        <td style="background: #AEF1AE">
+          http.this.Writeable.writeableOf_Content[play.twirl.api.HtmlFormat.Appendable](mvc.this.Codec.utf_8, http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8))
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          4
+        </td>
+        <td>
+          835
+          -
+          835
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.api.http.DefaultContentTypeOfs.contentTypeOf_Html
+        </td>
+        <td style="background: #AEF1AE">
+          http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          836
+          -
+          854
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          views.html.index.apply
+        </td>
+        <td style="background: #AEF1AE">
+          views.html.index.apply()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          3
+        </td>
+        <td>
+          835
+          -
+          835
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          play.api.mvc.Codec.utf_8
+        </td>
+        <td style="background: #AEF1AE">
+          mvc.this.Codec.utf_8
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          833
+          -
+          855
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.api.mvc.Results.Status.apply
+        </td>
+        <td style="background: #AEF1AE">
+          HomeController.this.Ok.apply[play.twirl.api.HtmlFormat.Appendable](views.html.index.apply())(http.this.Writeable.writeableOf_Content[play.twirl.api.HtmlFormat.Appendable](mvc.this.Codec.utf_8, http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8)))
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          1107
+          -
+          1271
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.api.mvc.ActionBuilder.apply
+        </td>
+        <td style="background: #F0ADAD">
+          HomeController.this.Action.apply(((implicit request: play.api.mvc.Request[play.api.mvc.AnyContent]) =&gt; HomeController.this.NotFound.apply[String](scala.StringContext.apply(&quot;Pet not found &quot;, &quot;&quot;).s(id))(http.this.Writeable.wString(mvc.this.Codec.utf_8))))
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          1246
+          -
+          1266
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #F0ADAD">
+          scala.StringContext.apply(&quot;Pet not found &quot;, &quot;&quot;).s(id)
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          1237
+          -
+          1267
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.api.mvc.Results.Status.apply
+        </td>
+        <td style="background: #F0ADAD">
+          HomeController.this.NotFound.apply[String](scala.StringContext.apply(&quot;Pet not found &quot;, &quot;&quot;).s(id))(http.this.Writeable.wString(mvc.this.Codec.utf_8))
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          1245
+          -
+          1245
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.api.http.DefaultWriteables.wString
+        </td>
+        <td style="background: #F0ADAD">
+          http.this.Writeable.wString(mvc.this.Codec.utf_8)
+        </td>
+      </tr><tr>
+        <td>
+          39
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          1245
+          -
+          1245
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          play.api.mvc.Codec.utf_8
+        </td>
+        <td style="background: #F0ADAD">
+          mvc.this.Codec.utf_8
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

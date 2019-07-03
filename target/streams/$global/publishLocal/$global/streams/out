@@ -1,0 +1,10 @@
+[0m[[0m[0minfo[0m] [0m[0m:: delivering :: com.yp.ginger#ginger_2.12;0.1 :: 0.1 :: release :: Wed Jul 03 11:25:48 CDT 2019[0m
+[0m[[0m[0mdebug[0m] [0m[0m	options = status=release pubdate=Wed Jul 03 11:25:48 CDT 2019 validate=true resolveDynamicRevisions=true merge=true resolveId=null pubBranch=null[0m
+[0m[[0m[0minfo[0m] [0m[0m	delivering ivy file to /Users/collib01/share/proj/beta2/proj/ginger_beta/target/scala-2.12/ivy-0.1.xml[0m
+[0m[[0m[0mdebug[0m] [0m[0m	deliver done (33ms)[0m
+[0m[[0m[0mdebug[0m] [0m[0mlocal do not support transaction. ivy pattern does not use revision as a directory[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ginger_2.12 to /Users/collib01/.ivy2/local/com.yp.ginger/ginger_2.12/0.1/poms/ginger_2.12.pom[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ginger_2.12 to /Users/collib01/.ivy2/local/com.yp.ginger/ginger_2.12/0.1/jars/ginger_2.12.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ginger_2.12 to /Users/collib01/.ivy2/local/com.yp.ginger/ginger_2.12/0.1/srcs/ginger_2.12-sources.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ginger_2.12 to /Users/collib01/.ivy2/local/com.yp.ginger/ginger_2.12/0.1/docs/ginger_2.12-javadoc.jar[0m
+[0m[[0m[0minfo[0m] [0m[0m	published ivy to /Users/collib01/.ivy2/local/com.yp.ginger/ginger_2.12/0.1/ivys/ivy.xml[0m

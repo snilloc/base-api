@@ -1,0 +1,1407 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          router/Routes.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>// @GENERATOR:play-routes-compiler
+</span>2 <span style=''>// @SOURCE:/Users/collib01/share/proj/beta2/proj/ginger_beta/conf/routes
+</span>3 <span style=''>// @DATE:Wed Jul 03 11:20:19 CDT 2019
+</span>4 <span style=''>
+</span>5 <span style=''>package router
+</span>6 <span style=''>
+</span>7 <span style=''>import play.core.routing._
+</span>8 <span style=''>import play.core.routing.HandlerInvokerFactory._
+</span>9 <span style=''>
+</span>10 <span style=''>import play.api.mvc._
+</span>11 <span style=''>
+</span>12 <span style=''>import _root_.controllers.Assets.Asset
+</span>13 <span style=''>
+</span>14 <span style=''>class Routes(
+</span>15 <span style=''>  override val errorHandler: play.api.http.HttpErrorHandler, 
+</span>16 <span style=''>  // @LINE:6
+</span>17 <span style=''>  HomeController_1: controllers.HomeController,
+</span>18 <span style=''>  // @LINE:12
+</span>19 <span style=''>  Assets_0: controllers.Assets,
+</span>20 <span style=''>  val prefix: String
+</span>21 <span style=''>) extends GeneratedRouter {
+</span>22 <span style=''>
+</span>23 <span style=''>   @javax.inject.Inject()
+</span>24 <span style=''>   def this(errorHandler: play.api.http.HttpErrorHandler,
+</span>25 <span style=''>    // @LINE:6
+</span>26 <span style=''>    HomeController_1: controllers.HomeController,
+</span>27 <span style=''>    // @LINE:12
+</span>28 <span style=''>    Assets_0: controllers.Assets
+</span>29 <span style=''>  ) = </span><span style='background: #AEF1AE'>this(errorHandler, HomeController_1, Assets_0, &quot;/&quot;)</span><span style=''>
+</span>30 <span style=''>
+</span>31 <span style=''>  def withPrefix(addPrefix: String): Routes = {
+</span>32 <span style=''>    val prefix = </span><span style='background: #AEF1AE'>play.api.routing.Router.concatPrefix(addPrefix, this.prefix)</span><span style=''>
+</span>33 <span style=''>    </span><span style='background: #AEF1AE'>router.RoutesPrefix.setPrefix(prefix)</span><span style=''>
+</span>34 <span style=''>    </span><span style='background: #AEF1AE'>new Routes(errorHandler, HomeController_1, Assets_0, prefix)</span><span style=''>
+</span>35 <span style=''>  }
+</span>36 <span style=''>
+</span>37 <span style=''>  private[this] val defaultPrefix: String = {
+</span>38 <span style=''>    if (</span><span style='background: #AEF1AE'>this.prefix.endsWith(&quot;/&quot;)</span><span style=''>) </span><span style='background: #AEF1AE'>&quot;&quot;</span><span style=''> else </span><span style='background: #F0ADAD'>&quot;/&quot;</span><span style=''>
+</span>39 <span style=''>  }
+</span>40 <span style=''>
+</span>41 <span style=''>  def documentation = </span><span style='background: #F0ADAD'>List(
+</span>42 <span style=''></span><span style='background: #F0ADAD'>    (&quot;&quot;&quot;GET&quot;&quot;&quot;, this.prefix + (if(this.prefix.endsWith(&quot;/&quot;)) &quot;&quot; else &quot;/&quot;) + &quot;&quot;&quot;pet/&quot;&quot;&quot; + &quot;$&quot; + &quot;&quot;&quot;id&lt;[^/]+&gt;&quot;&quot;&quot;, &quot;&quot;&quot;controllers.HomeController.getPetById(id:String)&quot;&quot;&quot;),
+</span>43 <span style=''></span><span style='background: #F0ADAD'>    (&quot;&quot;&quot;GET&quot;&quot;&quot;, this.prefix, &quot;&quot;&quot;controllers.HomeController.index&quot;&quot;&quot;),
+</span>44 <span style=''></span><span style='background: #F0ADAD'>    (&quot;&quot;&quot;GET&quot;&quot;&quot;, this.prefix + (if(this.prefix.endsWith(&quot;/&quot;)) &quot;&quot; else &quot;/&quot;) + &quot;&quot;&quot;assets/&quot;&quot;&quot; + &quot;$&quot; + &quot;&quot;&quot;file&lt;.+&gt;&quot;&quot;&quot;, &quot;&quot;&quot;controllers.Assets.versioned(path:String = &quot;/public&quot;, file:Asset)&quot;&quot;&quot;),
+</span>45 <span style=''></span><span style='background: #F0ADAD'>    Nil
+</span>46 <span style=''></span><span style='background: #F0ADAD'>  ).foldLeft(List.empty[(String,String,String)]) { (s,e) =&gt; e.asInstanceOf[Any] match {
+</span>47 <span style=''></span><span style='background: #F0ADAD'>    case r @ (_,_,_) =&gt; s :+ r.asInstanceOf[(String,String,String)]
+</span>48 <span style=''></span><span style='background: #F0ADAD'>    case l =&gt; s ++ l.asInstanceOf[List[(String,String,String)]]
+</span>49 <span style=''></span><span style='background: #F0ADAD'>  }}</span><span style=''>
+</span>50 <span style=''>
+</span>51 <span style=''>
+</span>52 <span style=''>  // @LINE:6
+</span>53 <span style=''>  private[this] lazy val controllers_HomeController_getPetById0_route = Route(&quot;GET&quot;,
+</span>54 <span style=''>    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart(&quot;pet/&quot;), DynamicPart(&quot;id&quot;, &quot;&quot;&quot;[^/]+&quot;&quot;&quot;,true)))
+</span>55 <span style=''>  )
+</span>56 <span style=''>  private[this] lazy val controllers_HomeController_getPetById0_invoker = createInvoker(
+</span>57 <span style=''>    HomeController_1.getPetById(fakeValue[String]),
+</span>58 <span style=''>    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+</span>59 <span style=''>      &quot;router&quot;,
+</span>60 <span style=''>      &quot;controllers.HomeController&quot;,
+</span>61 <span style=''>      &quot;getPetById&quot;,
+</span>62 <span style=''>      Seq(classOf[String]),
+</span>63 <span style=''>      &quot;GET&quot;,
+</span>64 <span style=''>      this.prefix + &quot;&quot;&quot;pet/&quot;&quot;&quot; + &quot;$&quot; + &quot;&quot;&quot;id&lt;[^/]+&gt;&quot;&quot;&quot;,
+</span>65 <span style=''>      &quot;&quot;&quot;&quot;&quot;&quot;,
+</span>66 <span style=''>      Seq()
+</span>67 <span style=''>    )
+</span>68 <span style=''>  )
+</span>69 <span style=''>
+</span>70 <span style=''>  // @LINE:9
+</span>71 <span style=''>  private[this] lazy val controllers_HomeController_index1_route = Route(&quot;GET&quot;,
+</span>72 <span style=''>    PathPattern(List(StaticPart(this.prefix)))
+</span>73 <span style=''>  )
+</span>74 <span style=''>  private[this] lazy val controllers_HomeController_index1_invoker = createInvoker(
+</span>75 <span style=''>    HomeController_1.index,
+</span>76 <span style=''>    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+</span>77 <span style=''>      &quot;router&quot;,
+</span>78 <span style=''>      &quot;controllers.HomeController&quot;,
+</span>79 <span style=''>      &quot;index&quot;,
+</span>80 <span style=''>      Nil,
+</span>81 <span style=''>      &quot;GET&quot;,
+</span>82 <span style=''>      this.prefix + &quot;&quot;&quot;&quot;&quot;&quot;,
+</span>83 <span style=''>      &quot;&quot;&quot; An example controller showing a sample home page&quot;&quot;&quot;,
+</span>84 <span style=''>      Seq()
+</span>85 <span style=''>    )
+</span>86 <span style=''>  )
+</span>87 <span style=''>
+</span>88 <span style=''>  // @LINE:12
+</span>89 <span style=''>  private[this] lazy val controllers_Assets_versioned2_route = Route(&quot;GET&quot;,
+</span>90 <span style=''>    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart(&quot;assets/&quot;), DynamicPart(&quot;file&quot;, &quot;&quot;&quot;.+&quot;&quot;&quot;,false)))
+</span>91 <span style=''>  )
+</span>92 <span style=''>  private[this] lazy val controllers_Assets_versioned2_invoker = createInvoker(
+</span>93 <span style=''>    Assets_0.versioned(fakeValue[String], fakeValue[Asset]),
+</span>94 <span style=''>    play.api.routing.HandlerDef(this.getClass.getClassLoader,
+</span>95 <span style=''>      &quot;router&quot;,
+</span>96 <span style=''>      &quot;controllers.Assets&quot;,
+</span>97 <span style=''>      &quot;versioned&quot;,
+</span>98 <span style=''>      Seq(classOf[String], classOf[Asset]),
+</span>99 <span style=''>      &quot;GET&quot;,
+</span>100 <span style=''>      this.prefix + &quot;&quot;&quot;assets/&quot;&quot;&quot; + &quot;$&quot; + &quot;&quot;&quot;file&lt;.+&gt;&quot;&quot;&quot;,
+</span>101 <span style=''>      &quot;&quot;&quot; Map static resources from the /public folder to the /assets URL path&quot;&quot;&quot;,
+</span>102 <span style=''>      Seq()
+</span>103 <span style=''>    )
+</span>104 <span style=''>  )
+</span>105 <span style=''>
+</span>106 <span style=''>
+</span>107 <span style=''>  def routes: PartialFunction[RequestHeader, Handler] = {
+</span>108 <span style=''>  
+</span>109 <span style=''>    // @LINE:6
+</span>110 <span style=''>    case controllers_HomeController_getPetById0_route(params@_) =&gt;
+</span>111 <span style=''>      </span><span style='background: #F0ADAD'>call(params.fromPath[String](&quot;id&quot;, None)) { (id) =&gt;
+</span>112 <span style=''></span><span style='background: #F0ADAD'>        controllers_HomeController_getPetById0_invoker.call(HomeController_1.getPetById(id))
+</span>113 <span style=''></span><span style='background: #F0ADAD'>      }</span><span style=''>
+</span>114 <span style=''>  
+</span>115 <span style=''>    // @LINE:9
+</span>116 <span style=''>    case controllers_HomeController_index1_route(params@_) =&gt;
+</span>117 <span style=''>      </span><span style='background: #AEF1AE'>call { 
+</span>118 <span style=''></span><span style='background: #AEF1AE'>        controllers_HomeController_index1_invoker.call(HomeController_1.index)
+</span>119 <span style=''></span><span style='background: #AEF1AE'>      }</span><span style=''>
+</span>120 <span style=''>  
+</span>121 <span style=''>    // @LINE:12
+</span>122 <span style=''>    case controllers_Assets_versioned2_route(params@_) =&gt;
+</span>123 <span style=''>      </span><span style='background: #F0ADAD'>call(Param[String](&quot;path&quot;, Right(&quot;/public&quot;)), params.fromPath[Asset](&quot;file&quot;, None)) { (path, file) =&gt;
+</span>124 <span style=''></span><span style='background: #F0ADAD'>        controllers_Assets_versioned2_invoker.call(Assets_0.versioned(path, file))
+</span>125 <span style=''></span><span style='background: #F0ADAD'>      }</span><span style=''>
+</span>126 <span style=''>  }
+</span>127 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          740
+          -
+          740
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          ()
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          740
+          -
+          791
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          router.Routes.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.&lt;init&gt;(errorHandler, HomeController_1, Assets_0, &quot;/&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          858
+          -
+          918
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.api.routing.Router.concatPrefix
+        </td>
+        <td style="background: #AEF1AE">
+          play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          906
+          -
+          917
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          router.Routes.prefix
+        </td>
+        <td style="background: #AEF1AE">
+          this.prefix
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          923
+          -
+          960
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          router.RoutesPrefix.setPrefix
+        </td>
+        <td style="background: #AEF1AE">
+          router.RoutesPrefix.setPrefix(prefix)
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          1008
+          -
+          1016
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          router.Routes.Assets_0
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.Assets_0
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          990
+          -
+          1006
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          router.Routes.HomeController_1
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.HomeController_1
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          976
+          -
+          988
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          router.Routes.errorHandler
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.errorHandler
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          965
+          -
+          1025
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          router.Routes.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new Routes(Routes.this.errorHandler, Routes.this.HomeController_1, Routes.this.Assets_0, prefix)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          1112
+          -
+          1114
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          1120
+          -
+          1123
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;/&quot;
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          1085
+          -
+          1110
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.endsWith
+        </td>
+        <td style="background: #AEF1AE">
+          this.prefix.endsWith(&quot;/&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          1120
+          -
+          1123
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;/&quot;
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          1112
+          -
+          1114
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          1269
+          -
+          1323
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;controllers.HomeController.getPetById(id:String)&quot;
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          1173
+          -
+          1267
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          this.prefix.+(if (this.prefix.endsWith(&quot;/&quot;))
+  &quot;&quot;
+else
+  &quot;/&quot;).+(&quot;pet/&quot;).+(&quot;$&quot;).+(&quot;id&lt;[^/]+&gt;&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          1162
+          -
+          1171
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;GET&quot;
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          1161
+          -
+          1324
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Tuple3.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Tuple3.apply[String, String, String](&quot;GET&quot;, this.prefix.+(if (this.prefix.endsWith(&quot;/&quot;))
+  &quot;&quot;
+else
+  &quot;/&quot;).+(&quot;pet/&quot;).+(&quot;$&quot;).+(&quot;id&lt;[^/]+&gt;&quot;), &quot;controllers.HomeController.getPetById(id:String)&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          1342
+          -
+          1353
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          router.Routes.prefix
+        </td>
+        <td style="background: #F0ADAD">
+          this.prefix
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          1331
+          -
+          1340
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;GET&quot;
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          1330
+          -
+          1394
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Tuple3.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Tuple3.apply[String, String, String](&quot;GET&quot;, this.prefix, &quot;controllers.HomeController.index&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          43
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          1355
+          -
+          1393
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;controllers.HomeController.index&quot;
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          1401
+          -
+          1410
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;GET&quot;
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          1400
+          -
+          1582
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Tuple3.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Tuple3.apply[String, String, String](&quot;GET&quot;, this.prefix.+(if (this.prefix.endsWith(&quot;/&quot;))
+  &quot;&quot;
+else
+  &quot;/&quot;).+(&quot;assets/&quot;).+(&quot;$&quot;).+(&quot;file&lt;.+&gt;&quot;), &quot;controllers.Assets.versioned(path:String = \&quot;/public\&quot;, file:Asset)&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          1510
+          -
+          1581
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;controllers.Assets.versioned(path:String = \&quot;/public\&quot;, file:Asset)&quot;
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          1412
+          -
+          1508
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          this.prefix.+(if (this.prefix.endsWith(&quot;/&quot;))
+  &quot;&quot;
+else
+  &quot;/&quot;).+(&quot;assets/&quot;).+(&quot;$&quot;).+(&quot;file&lt;.+&gt;&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          1588
+          -
+          1591
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.immutable.Nil
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.immutable.Nil
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          1652
+          -
+          1671
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.Any.asInstanceOf
+        </td>
+        <td style="background: #F0ADAD">
+          e.asInstanceOf[Any]
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          1605
+          -
+          1639
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.empty
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.immutable.List.empty[(String, String, String)]
+        </td>
+      </tr><tr>
+        <td>
+          46
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          1151
+          -
+          1816
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.LinearSeqOptimized.foldLeft
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.immutable.List.apply[Product with Serializable](scala.Tuple3.apply[String, String, String](&quot;GET&quot;, this.prefix.+(if (this.prefix.endsWith(&quot;/&quot;))
+  &quot;&quot;
+else
+  &quot;/&quot;).+(&quot;pet/&quot;).+(&quot;$&quot;).+(&quot;id&lt;[^/]+&gt;&quot;), &quot;controllers.HomeController.getPetById(id:String)&quot;), scala.Tuple3.apply[String, String, String](&quot;GET&quot;, this.prefix, &quot;controllers.HomeController.index&quot;), scala.Tuple3.apply[String, String, String](&quot;GET&quot;, this.prefix.+(if (this.prefix.endsWith(&quot;/&quot;))
+  &quot;&quot;
+else
+  &quot;/&quot;).+(&quot;assets/&quot;).+(&quot;$&quot;).+(&quot;file&lt;.+&gt;&quot;), &quot;controllers.Assets.versioned(path:String = \&quot;/public\&quot;, file:Asset)&quot;), scala.collection.immutable.Nil).foldLeft[List[(String, String, String)]](scala.collection.immutable.List.empty[(String, String, String)])(((s: List[(String, String, String)], e: Product with Serializable) =&gt; e.asInstanceOf[Any] match {
+  case (r @ (_1: Any, _2: Any, _3: Any)(Any, Any, Any)(_, _, _)) =&gt; s.:+[(String, String, String), List[(String, String, String)]](r.asInstanceOf[(String, String, String)])(immutable.this.List.canBuildFrom[(String, String, String)])
+  case (l @ _) =&gt; s.++[(String, String, String), List[(String, String, String)]](l.asInstanceOf[List[(String, String, String)]])(immutable.this.List.canBuildFrom[(String, String, String)])
+}))
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          1704
+          -
+          1747
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.SeqLike.:+
+        </td>
+        <td style="background: #F0ADAD">
+          s.:+[(String, String, String), List[(String, String, String)]](r.asInstanceOf[(String, String, String)])(immutable.this.List.canBuildFrom[(String, String, String)])
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          1706
+          -
+          1706
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[(String, String, String)]
+        </td>
+      </tr><tr>
+        <td>
+          47
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          1709
+          -
+          1747
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.Any.asInstanceOf
+        </td>
+        <td style="background: #F0ADAD">
+          r.asInstanceOf[(String, String, String)]
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          1762
+          -
+          1811
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.immutable.List.++
+        </td>
+        <td style="background: #F0ADAD">
+          s.++[(String, String, String), List[(String, String, String)]](l.asInstanceOf[List[(String, String, String)]])(immutable.this.List.canBuildFrom[(String, String, String)])
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          1764
+          -
+          1764
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.List.canBuildFrom
+        </td>
+        <td style="background: #F0ADAD">
+          immutable.this.List.canBuildFrom[(String, String, String)]
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          1767
+          -
+          1811
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.Any.asInstanceOf
+        </td>
+        <td style="background: #F0ADAD">
+          l.asInstanceOf[List[(String, String, String)]]
+        </td>
+      </tr><tr>
+        <td>
+          107
+        </td>
+        <td>
+          70
+        </td>
+        <td>
+          3766
+          -
+          3766
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          router.Routes.$anonfun.&lt;init&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          new $anonfun()
+        </td>
+      </tr><tr>
+        <td>
+          111
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          3894
+          -
+          3898
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          111
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          3859
+          -
+          4011
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.GeneratedRouter.call
+        </td>
+        <td style="background: #F0ADAD">
+          Routes.this.call[String](params.fromPath[String](&quot;id&quot;, scala.None)(mvc.this.PathBindable.bindableString))(((id: String) =&gt; Routes.this.controllers_HomeController_getPetById0_invoker.call(Routes.this.HomeController_1.getPetById(id))))
+        </td>
+      </tr><tr>
+        <td>
+          111
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          3888
+          -
+          3892
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;id&quot;
+        </td>
+      </tr><tr>
+        <td>
+          111
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          3864
+          -
+          3899
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.core.routing.RouteParams.fromPath
+        </td>
+        <td style="background: #F0ADAD">
+          params.fromPath[String](&quot;id&quot;, scala.None)(mvc.this.PathBindable.bindableString)
+        </td>
+      </tr><tr>
+        <td>
+          111
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          3887
+          -
+          3887
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          play.api.mvc.PathBindable.bindableString
+        </td>
+        <td style="background: #F0ADAD">
+          mvc.this.PathBindable.bindableString
+        </td>
+      </tr><tr>
+        <td>
+          112
+        </td>
+        <td>
+          53
+        </td>
+        <td>
+          3971
+          -
+          4002
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          controllers.HomeController.getPetById
+        </td>
+        <td style="background: #F0ADAD">
+          Routes.this.HomeController_1.getPetById(id)
+        </td>
+      </tr><tr>
+        <td>
+          112
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          3919
+          -
+          4003
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.HandlerInvoker.call
+        </td>
+        <td style="background: #F0ADAD">
+          Routes.this.controllers_HomeController_getPetById0_invoker.call(Routes.this.HomeController_1.getPetById(id))
+        </td>
+      </tr><tr>
+        <td>
+          117
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          4098
+          -
+          4192
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.GeneratedRouter.call
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.call(Routes.this.controllers_HomeController_index1_invoker.call(Routes.this.HomeController_1.index()))
+        </td>
+      </tr><tr>
+        <td>
+          118
+        </td>
+        <td>
+          56
+        </td>
+        <td>
+          4161
+          -
+          4183
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          controllers.HomeController.index
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.HomeController_1.index()
+        </td>
+      </tr><tr>
+        <td>
+          118
+        </td>
+        <td>
+          57
+        </td>
+        <td>
+          4114
+          -
+          4184
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.HandlerInvoker.call
+        </td>
+        <td style="background: #AEF1AE">
+          Routes.this.controllers_HomeController_index1_invoker.call(Routes.this.HomeController_1.index())
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          59
+        </td>
+        <td>
+          4295
+          -
+          4301
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;path&quot;
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          62
+        </td>
+        <td>
+          4345
+          -
+          4351
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;file&quot;
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          65
+        </td>
+        <td>
+          4344
+          -
+          4344
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          controllers.Assets.Asset.assetPathBindable
+        </td>
+        <td style="background: #F0ADAD">
+          Assets.this.Asset.assetPathBindable(routing.this.ReverseRouteContext.empty)
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          4344
+          -
+          4344
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          play.core.routing.ReverseRouteContext.empty
+        </td>
+        <td style="background: #F0ADAD">
+          routing.this.ReverseRouteContext.empty
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          61
+        </td>
+        <td>
+          4281
+          -
+          4320
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.Param.apply
+        </td>
+        <td style="background: #F0ADAD">
+          play.core.routing.Param.apply[String](&quot;path&quot;, scala.`package`.Right.apply[Nothing, String](&quot;/public&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          60
+        </td>
+        <td>
+          4303
+          -
+          4319
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.util.Right.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.`package`.Right.apply[Nothing, String](&quot;/public&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          69
+        </td>
+        <td>
+          4276
+          -
+          4468
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.GeneratedRouter.call
+        </td>
+        <td style="background: #F0ADAD">
+          Routes.this.call[String, controllers.Assets.Asset](play.core.routing.Param.apply[String](&quot;path&quot;, scala.`package`.Right.apply[Nothing, String](&quot;/public&quot;)), params.fromPath[controllers.Assets.Asset](&quot;file&quot;, scala.None)(Assets.this.Asset.assetPathBindable(routing.this.ReverseRouteContext.empty)))(((path: String, file: controllers.Assets.Asset) =&gt; Routes.this.controllers_Assets_versioned2_invoker.call(Routes.this.Assets_0.versioned(path, file))))
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          4353
+          -
+          4357
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.None
+        </td>
+        <td style="background: #F0ADAD">
+          scala.None
+        </td>
+      </tr><tr>
+        <td>
+          123
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          4322
+          -
+          4358
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          play.core.routing.RouteParams.fromPath
+        </td>
+        <td style="background: #F0ADAD">
+          params.fromPath[controllers.Assets.Asset](&quot;file&quot;, scala.None)(Assets.this.Asset.assetPathBindable(routing.this.ReverseRouteContext.empty))
+        </td>
+      </tr><tr>
+        <td>
+          124
+        </td>
+        <td>
+          68
+        </td>
+        <td>
+          4386
+          -
+          4460
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          play.core.routing.HandlerInvoker.call
+        </td>
+        <td style="background: #F0ADAD">
+          Routes.this.controllers_Assets_versioned2_invoker.call(Routes.this.Assets_0.versioned(path, file))
+        </td>
+      </tr><tr>
+        <td>
+          124
+        </td>
+        <td>
+          67
+        </td>
+        <td>
+          4429
+          -
+          4459
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          controllers.AssetsBuilder.versioned
+        </td>
+        <td style="background: #F0ADAD">
+          Routes.this.Assets_0.versioned(path, file)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

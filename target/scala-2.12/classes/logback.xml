@@ -1,0 +1,80 @@
+<!-- https://www.playframework.com/documentation/latest/SettingsLogger -->
+<configuration debug="false" packagingData="true">
+
+  <!-- Disable all the logback noise due to problems in graylog config -->
+  <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+  <!-- <statusListener class="ch.qos.logback.core.status.OnConsoleStatusListener" /> -->
+
+  <logger name="com.google.inject.internal" level="ERROR" />
+  <logger name="com.sun.jersey" level="WARN" />
+  <logger name="com.ning.http" level="WARN" />
+  <logger name="com.mchange.v2" level="WARN" />
+  <logger name="javax.management.mbeanserver" level="WARN"/>
+  <logger name="net.sf.ehcache" level="WARN"/>
+
+  <logger name="unit.controllers" level="ERROR" />
+  <logger name="io.swagger.client" level="ERROR" />
+
+  <logger name="akka" level="ERROR" />
+  <logger name="play" level="DEBUG" />
+  <logger name="application" level="DEBUG" />
+  <logger name="controllers" level="DEBUG" />
+  <logger name="services" level="DEBUG" />
+  <logger name="utils" level="DEBUG" />
+  <logger name="clients" level="DEBUG" />
+  <logger name="models" level="DEBUG" />
+  <logger name="actors" level="DEBUG" />
+  <logger name="QueryLog" level="DEBUG" />
+
+  <conversionRule conversionWord="coloredLevel" converterClass="play.api.Logger$ColoredLevel" />
+
+  <appender name="STDOUTNP" class="ch.qos.logback.core.ConsoleAppender">
+    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+      <level>INFO</level>
+    </filter>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd'T'HH:mm:ss.SSSX} [%thread] %-5level %logger{36}:rid:%X{rid} - %message%n%xException</pattern>
+    </encoder>
+  </appender>
+
+  <property name="LOG_FILE" value="gump" />
+  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <file>logs/${LOG_FILE}.log</file>
+    <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+      <!-- daily rollover -->
+      <fileNamePattern>logs/archived/${LOG_FILE}_%d{yyyy_MM_dd}.%i.log</fileNamePattern>
+      <maxFileSize>500MB</maxFileSize>
+      <totalSizeCap>20GB</totalSizeCap>
+      <!-- keep 30 days' worth of history capped at 3GB total size -->
+      <maxHistory>30</maxHistory>
+    </rollingPolicy>
+    <encoder>
+      <pattern>%d{yyyy-MM-dd HH:mm:ss.SSSX} %p B[%thread] %level %logger{36}:%X{rid} - %m%n</pattern>
+    </encoder>
+  </appender>
+
+  <conversionRule conversionWord="coloredLevel" converterClass="play.api.libs.logback.ColoredLevel" />
+
+  <logger name="play" level="INFO" />
+  <logger name="application" level="DEBUG" />
+
+  <!-- This is TCP appender  - prod may be using UDP -->
+  <appender name="GRAYLOG2NP" class="de.siegmar.logbackgelf.GelfTcpAppender">
+    <graylogHost>graylog-dev-1.np.st1.yellowpages.com</graylogHost>
+    <graylogPort>5555</graylogPort>
+    <layout class="de.siegmar.logbackgelf.GelfLayout">
+      <includeLevelName>true</includeLevelName>
+      <staticField>app_name:gump2</staticField>
+      <staticField>group:saturn</staticField>
+      <staticField>data_center:${DATACENTER}</staticField>
+      <staticField>environment:${ENVIRONMENT}</staticField>
+      <staticField>version:${PACKAGE_VERSION}</staticField>
+    </layout>
+  </appender>
+
+  <root level="INFO">
+    <appender-ref ref="STDOUTNP" />
+    <appender-ref ref="FILE" />
+  </root>
+
+</configuration>

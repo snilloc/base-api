@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage 
+line-rate="0.55" lines-valid="113" lines-covered="62" branches-valid="2" branches-covered="1" branch-rate="0.50" complexity="0" version="1.0" timestamp="1562170842510">
+    <sources>
+        <source>--source</source>
+        <source>/Users/collib01/share/proj/beta2/proj/ginger_beta/app</source>
+        <source>/Users/collib01/share/proj/beta2/proj/ginger_beta/app</source>
+        <source>/Users/collib01/share/proj/beta2/proj/ginger_beta/target/scala-2.12/twirl/main</source>
+        <source>/Users/collib01/share/proj/beta2/proj/ginger_beta/target/scala-2.12/routes/main</source>
+    </sources>
+    <packages>
+        <package name="controllers" line-rate="0.58" branch-rate="1.00" complexity="0">
+            <classes>
+                <class 
+                name="controllers.HomeController" filename="controllers/HomeController.scala" line-rate="0.58" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method 
+                        name="controllers/HomeController/getPetById" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="39" hits="0" branch="false"/>
+                                <line number="39" hits="0" branch="false"/>
+                                <line number="39" hits="0" branch="false"/>
+                                <line number="39" hits="0" branch="false"/>
+                                <line number="36" hits="0" branch="false"/>
+                            </lines>
+</method>
+                        <method name="controllers/HomeController/index" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="28" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="39" hits="0" branch="false"/>
+                        <line number="39" hits="0" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="28" hits="1" branch="false"/>
+                        <line number="39" hits="0" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="39" hits="0" branch="false"/>
+                        <line number="36" hits="0" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+        <package name="router" line-rate="0.32" branch-rate="0.50" complexity="0">
+            <classes>
+                <class name="router.Routes" filename="router/Routes.scala" line-rate="0.28" branch-rate="0.50" complexity="0">
+                    <methods>
+                        <method name="router/Routes/&lt;init&gt;" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="29" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="router/Routes/documentation" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="46" hits="0" branch="false"/>
+                                <line number="43" hits="0" branch="false"/>
+                                <line number="44" hits="0" branch="false"/>
+                                <line number="47" hits="0" branch="false"/>
+                                <line number="44" hits="0" branch="false"/>
+                                <line number="42" hits="0" branch="false"/>
+                                <line number="48" hits="0" branch="false"/>
+                                <line number="48" hits="0" branch="false"/>
+                                <line number="46" hits="0" branch="false"/>
+                                <line number="43" hits="0" branch="false"/>
+                                <line number="47" hits="0" branch="false"/>
+                                <line number="43" hits="0" branch="false"/>
+                                <line number="44" hits="0" branch="false"/>
+                                <line number="42" hits="0" branch="false"/>
+                                <line number="48" hits="0" branch="false"/>
+                                <line number="42" hits="0" branch="false"/>
+                                <line number="44" hits="0" branch="false"/>
+                                <line number="46" hits="0" branch="false"/>
+                                <line number="42" hits="0" branch="false"/>
+                                <line number="45" hits="0" branch="false"/>
+                                <line number="47" hits="0" branch="false"/>
+                                <line number="43" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="router/Routes/&lt;none&gt;" signature="()V" line-rate="0.60" branch-rate="0.50" complexity="0">
+                            <lines>
+                                <line number="38" hits="1" branch="false"/>
+                                <line number="38" hits="0" branch="false"/>
+                                <line number="38" hits="1" branch="false"/>
+                                <line number="38" hits="0" branch="false"/>
+                                <line number="38" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="router/Routes/withPrefix" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="33" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="32" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="34" hits="1" branch="false"/>
+                                <line number="32" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="router/Routes/routes" signature="()V" line-rate="0.18" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="111" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="124" hits="0" branch="false"/>
+                                <line number="112" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="118" hits="1" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="111" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="117" hits="1" branch="false"/>
+                                <line number="124" hits="0" branch="false"/>
+                                <line number="111" hits="0" branch="false"/>
+                                <line number="107" hits="1" branch="false"/>
+                                <line number="111" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="112" hits="0" branch="false"/>
+                                <line number="118" hits="1" branch="false"/>
+                                <line number="123" hits="0" branch="false"/>
+                                <line number="111" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="38" hits="1" branch="false"/>
+                        <line number="111" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="46" hits="0" branch="false"/>
+                        <line number="43" hits="0" branch="false"/>
+                        <line number="124" hits="0" branch="false"/>
+                        <line number="112" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="44" hits="0" branch="false"/>
+                        <line number="47" hits="0" branch="false"/>
+                        <line number="33" hits="1" branch="false"/>
+                        <line number="38" hits="0" branch="false"/>
+                        <line number="118" hits="1" branch="false"/>
+                        <line number="44" hits="0" branch="false"/>
+                        <line number="42" hits="0" branch="false"/>
+                        <line number="48" hits="0" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="48" hits="0" branch="false"/>
+                        <line number="111" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="117" hits="1" branch="false"/>
+                        <line number="124" hits="0" branch="false"/>
+                        <line number="111" hits="0" branch="false"/>
+                        <line number="46" hits="0" branch="false"/>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="38" hits="1" branch="false"/>
+                        <line number="43" hits="0" branch="false"/>
+                        <line number="32" hits="1" branch="false"/>
+                        <line number="107" hits="1" branch="false"/>
+                        <line number="47" hits="0" branch="false"/>
+                        <line number="111" hits="0" branch="false"/>
+                        <line number="38" hits="0" branch="false"/>
+                        <line number="43" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="44" hits="0" branch="false"/>
+                        <line number="42" hits="0" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="48" hits="0" branch="false"/>
+                        <line number="112" hits="0" branch="false"/>
+                        <line number="42" hits="0" branch="false"/>
+                        <line number="44" hits="0" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="46" hits="0" branch="false"/>
+                        <line number="34" hits="1" branch="false"/>
+                        <line number="118" hits="1" branch="false"/>
+                        <line number="42" hits="0" branch="false"/>
+                        <line number="45" hits="0" branch="false"/>
+                        <line number="123" hits="0" branch="false"/>
+                        <line number="32" hits="1" branch="false"/>
+                        <line number="47" hits="0" branch="false"/>
+                        <line number="111" hits="0" branch="false"/>
+                        <line number="43" hits="0" branch="false"/>
+                        <line number="38" hits="1" branch="false"/>
+                    </lines>
+                </class>
+                <class 
+                name="router.RoutesPrefix" filename="router/RoutesPrefix.scala" line-rate="1.00" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method name="router/RoutesPrefix/&lt;none&gt;" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="8" hits="1" branch="false"/>
+                                <line number="13" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="router/RoutesPrefix/setPrefix" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="10" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="router/RoutesPrefix/prefix" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="12" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="8" hits="1" branch="false"/>
+                        <line number="13" hits="1" branch="false"/>
+                        <line number="12" hits="1" branch="false"/>
+                        <line number="10" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+        <package name="views.html" line-rate="0.90" branch-rate="1.00" complexity="0">
+            <classes>
+                <class 
+                name="views.html.index" filename="views/html/index.template.scala" line-rate="0.85" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method name="views.html/index/f" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="37" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="views.html/index/apply" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="29" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="22" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="28" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                                <line number="26" hits="1" branch="false"/>
+                                <line number="26" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="views.html/index/render" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="35" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="29" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="35" hits="0" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="22" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="37" hits="0" branch="false"/>
+                        <line number="28" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                        <line number="26" hits="1" branch="false"/>
+                        <line number="26" hits="1" branch="false"/>
+                    </lines>
+</class>
+                <class 
+                name="views.html.main" filename="views/html/main.template.scala" line-rate="0.92" branch-rate="1.00" complexity="0">
+                    <methods>
+                        <method name="views.html/main/render" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="53" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="views.html/main/apply" signature="()V" line-rate="1.00" branch-rate="1.00" complexity="0">
+                            <lines>
+                                <line number="36" hits="1" branch="false"/>
+                                <line number="38" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                                <line number="32" hits="1" branch="false"/>
+                                <line number="38" hits="1" branch="false"/>
+                                <line number="45" hits="1" branch="false"/>
+                                <line number="45" hits="1" branch="false"/>
+                                <line number="38" hits="1" branch="false"/>
+                                <line number="45" hits="1" branch="false"/>
+                                <line number="36" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                                <line number="43" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                                <line number="31" hits="1" branch="false"/>
+                                <line number="37" hits="1" branch="false"/>
+                                <line number="45" hits="1" branch="false"/>
+                                <line number="38" hits="1" branch="false"/>
+                                <line number="35" hits="1" branch="false"/>
+                                <line number="45" hits="1" branch="false"/>
+                                <line number="42" hits="1" branch="false"/>
+                                <line number="36" hits="1" branch="false"/>
+                                <line number="27" hits="1" branch="false"/>
+                            </lines>
+                        </method>
+                        <method name="views.html/main/f" signature="()V" line-rate="0.00" branch-rate="0.00" complexity="0">
+                            <lines>
+                                <line number="55" hits="0" branch="false"/>
+                            </lines>
+                        </method>
+                    </methods>
+                    <lines>
+                        <line number="36" hits="1" branch="false"/>
+                        <line number="38" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="55" hits="0" branch="false"/>
+                        <line number="32" hits="1" branch="false"/>
+                        <line number="38" hits="1" branch="false"/>
+                        <line number="45" hits="1" branch="false"/>
+                        <line number="45" hits="1" branch="false"/>
+                        <line number="38" hits="1" branch="false"/>
+                        <line number="45" hits="1" branch="false"/>
+                        <line number="36" hits="1" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="43" hits="1" branch="false"/>
+                        <line number="53" hits="0" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="31" hits="1" branch="false"/>
+                        <line number="37" hits="1" branch="false"/>
+                        <line number="45" hits="1" branch="false"/>
+                        <line number="38" hits="1" branch="false"/>
+                        <line number="35" hits="1" branch="false"/>
+                        <line number="45" hits="1" branch="false"/>
+                        <line number="42" hits="1" branch="false"/>
+                        <line number="36" hits="1" branch="false"/>
+                        <line number="27" hits="1" branch="false"/>
+                    </lines>
+</class>
+            </classes>
+        </package>
+    </packages>
+</coverage>

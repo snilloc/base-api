@@ -1,0 +1,2760 @@
+# Coverage data, format version: 2.0
+# Statement data:
+# - id
+# - source path
+# - package name
+# - class name
+# - class type (Class, Object or Trait)
+# - full class name
+# - method name
+# - start offset
+# - end offset
+# - line number
+# - symbol name
+# - tree name
+# - is branch
+# - invocations count
+# - is ignored
+# - description (can be multi-line)
+# '' sign
+# ------------------------------------------
+1
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+<none>
+418
+431
+19
+java.lang.Object.getClass
+Apply
+false
+0
+false
+this.getClass()
+
+2
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+<none>
+411
+432
+19
+play.api.Logger.apply
+Apply
+false
+0
+false
+play.api.Logger.apply(this.getClass())
+
+3
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+907
+922
+33
+<nosymbol>
+Literal
+false
+0
+false
+"Index called "
+
+4
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+906
+906
+33
+play.api.LowPriorityMarkerContextImplicits.NoMarker
+Select
+false
+0
+false
+api.this.MarkerContext.NoMarker
+
+5
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+895
+923
+33
+play.api.LoggerLike.info
+ApplyToImplicitArgs
+false
+0
+false
+HomeController.this.logger.info("Index called ")(api.this.MarkerContext.NoMarker)
+
+6
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+931
+949
+34
+views.html.index.apply
+Apply
+false
+0
+false
+views.html.index.apply()
+
+7
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+930
+930
+34
+play.api.mvc.Codec.utf_8
+Select
+false
+0
+false
+mvc.this.Codec.utf_8
+
+8
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+930
+930
+34
+play.api.mvc.Codec.utf_8
+Select
+false
+0
+false
+mvc.this.Codec.utf_8
+
+9
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+930
+930
+34
+play.api.http.DefaultContentTypeOfs.contentTypeOf_Html
+ApplyToImplicitArgs
+false
+0
+false
+http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8)
+
+10
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+930
+930
+34
+play.api.http.LowPriorityWriteables.writeableOf_Content
+ApplyToImplicitArgs
+false
+0
+false
+http.this.Writeable.writeableOf_Content[play.twirl.api.HtmlFormat.Appendable](mvc.this.Codec.utf_8, http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8))
+
+11
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+928
+950
+34
+play.api.mvc.Results.Status.apply
+ApplyToImplicitArgs
+false
+0
+false
+HomeController.this.Ok.apply[play.twirl.api.HtmlFormat.Appendable](views.html.index.apply())(http.this.Writeable.writeableOf_Content[play.twirl.api.HtmlFormat.Appendable](mvc.this.Codec.utf_8, http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8)))
+
+12
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+index
+840
+954
+31
+play.api.mvc.ActionBuilder.apply
+Apply
+false
+0
+false
+HomeController.this.Action.apply(((implicit request: play.api.mvc.Request[play.api.mvc.AnyContent]) => {
+  HomeController.this.logger.info("Index called ")(api.this.MarkerContext.NoMarker);
+  HomeController.this.Ok.apply[play.twirl.api.HtmlFormat.Appendable](views.html.index.apply())(http.this.Writeable.writeableOf_Content[play.twirl.api.HtmlFormat.Appendable](mvc.this.Codec.utf_8, http.this.ContentTypeOf.contentTypeOf_Html(mvc.this.Codec.utf_8)))
+}))
+
+13
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1273
+1293
+43
+<nosymbol>
+Literal
+false
+0
+false
+"getPetById called "
+
+14
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1272
+1272
+43
+play.api.LowPriorityMarkerContextImplicits.NoMarker
+Select
+false
+0
+false
+api.this.MarkerContext.NoMarker
+
+15
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1261
+1294
+43
+play.api.LoggerLike.info
+ApplyToImplicitArgs
+false
+0
+false
+HomeController.this.logger.info("getPetById called ")(api.this.MarkerContext.NoMarker)
+
+16
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1381
+1401
+45
+scala.StringContext.s
+Apply
+false
+0
+false
+scala.StringContext.apply("Pet not found ", "").s(id)
+
+17
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1380
+1380
+45
+play.api.mvc.Codec.utf_8
+Select
+false
+0
+false
+mvc.this.Codec.utf_8
+
+18
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1380
+1380
+45
+play.api.http.DefaultWriteables.wString
+ApplyToImplicitArgs
+false
+0
+false
+http.this.Writeable.wString(mvc.this.Codec.utf_8)
+
+19
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1372
+1402
+45
+play.api.mvc.Results.Status.apply
+ApplyToImplicitArgs
+false
+0
+false
+HomeController.this.NotFound.apply[String](scala.StringContext.apply("Pet not found ", "").s(id))(http.this.Writeable.wString(mvc.this.Codec.utf_8))
+
+20
+/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala
+controllers
+HomeController
+Class
+controllers.HomeController
+getPetById
+1202
+1406
+41
+play.api.mvc.ActionBuilder.apply
+Apply
+false
+0
+false
+HomeController.this.Action.apply(((implicit request: play.api.mvc.Request[play.api.mvc.AnyContent]) => {
+  HomeController.this.logger.info("getPetById called ")(api.this.MarkerContext.NoMarker);
+  HomeController.this.NotFound.apply[String](scala.StringContext.apply("Pet not found ", "").s(id))(http.this.Writeable.wString(mvc.this.Codec.utf_8))
+}))
+
+21
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<init>
+862
+934
+33
+router.Routes.<init>
+Apply
+false
+0
+false
+Routes.this.<init>(errorHandler, ApiHelpController_0, Assets_1, HomeController_2, "/")
+
+22
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<init>
+862
+862
+33
+<nosymbol>
+Literal
+false
+0
+false
+()
+
+23
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1049
+1060
+36
+router.Routes.prefix
+Select
+false
+0
+false
+this.prefix
+
+24
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1001
+1061
+36
+play.api.routing.Router.concatPrefix
+Apply
+false
+0
+false
+play.api.routing.Router.concatPrefix(addPrefix, this.prefix)
+
+25
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1066
+1103
+37
+router.RoutesPrefix.setPrefix
+Apply
+false
+0
+false
+router.RoutesPrefix.setPrefix(prefix)
+
+26
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1119
+1131
+38
+router.Routes.errorHandler
+Select
+false
+0
+false
+Routes.this.errorHandler
+
+27
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1133
+1152
+38
+router.Routes.ApiHelpController_0
+Select
+false
+0
+false
+Routes.this.ApiHelpController_0
+
+28
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1154
+1162
+38
+router.Routes.Assets_1
+Select
+false
+0
+false
+Routes.this.Assets_1
+
+29
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1164
+1180
+38
+router.Routes.HomeController_2
+Select
+false
+0
+false
+Routes.this.HomeController_2
+
+30
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+withPrefix
+1108
+1189
+38
+router.Routes.<init>
+Apply
+false
+0
+false
+new Routes(Routes.this.errorHandler, Routes.this.ApiHelpController_0, Routes.this.Assets_1, Routes.this.HomeController_2, prefix)
+
+31
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<none>
+1249
+1274
+42
+java.lang.String.endsWith
+Apply
+false
+0
+false
+this.prefix.endsWith("/")
+
+32
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<none>
+1276
+1278
+42
+<nosymbol>
+Literal
+false
+0
+false
+""
+
+33
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<none>
+1276
+1278
+42
+<nosymbol>
+Block
+true
+0
+false
+""
+
+34
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<none>
+1284
+1287
+42
+<nosymbol>
+Literal
+false
+0
+false
+"/"
+
+35
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+<none>
+1284
+1287
+42
+<nosymbol>
+Block
+true
+0
+false
+"/"
+
+36
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1326
+1335
+46
+<nosymbol>
+Literal
+false
+0
+false
+"GET"
+
+37
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1337
+1415
+46
+java.lang.String.+
+Apply
+false
+0
+false
+this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("swagger.json")
+
+38
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1417
+1465
+46
+<nosymbol>
+Literal
+false
+0
+false
+"controllers.ApiHelpController.getResources"
+
+39
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1325
+1466
+46
+scala.Tuple3.apply
+Apply
+false
+0
+false
+scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("swagger.json"), "controllers.ApiHelpController.getResources")
+
+40
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1473
+1482
+47
+<nosymbol>
+Literal
+false
+0
+false
+"GET"
+
+41
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1484
+1555
+47
+java.lang.String.+
+Apply
+false
+0
+false
+this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("docs/")
+
+42
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1557
+1645
+47
+<nosymbol>
+Literal
+false
+0
+false
+"controllers.Assets.at(path:String = \"/public/swagger\", file:String = \"index.html\")"
+
+43
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1472
+1646
+47
+scala.Tuple3.apply
+Apply
+false
+0
+false
+scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("docs/"), "controllers.Assets.at(path:String = \"/public/swagger\", file:String = \"index.html\")")
+
+44
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1653
+1662
+48
+<nosymbol>
+Literal
+false
+0
+false
+"GET"
+
+45
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1664
+1758
+48
+java.lang.String.+
+Apply
+false
+0
+false
+this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("docs/").+("$").+("file<.+>")
+
+46
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1760
+1833
+48
+<nosymbol>
+Literal
+false
+0
+false
+"controllers.Assets.at(path:String = \"/public/swagger\", file:String)"
+
+47
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1652
+1834
+48
+scala.Tuple3.apply
+Apply
+false
+0
+false
+scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("docs/").+("$").+("file<.+>"), "controllers.Assets.at(path:String = \"/public/swagger\", file:String)")
+
+48
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1841
+1850
+49
+<nosymbol>
+Literal
+false
+0
+false
+"GET"
+
+49
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1852
+1946
+49
+java.lang.String.+
+Apply
+false
+0
+false
+this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("pet/").+("$").+("id<[^/]+>")
+
+50
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1948
+2002
+49
+<nosymbol>
+Literal
+false
+0
+false
+"controllers.HomeController.getPetById(id:String)"
+
+51
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1840
+2003
+49
+scala.Tuple3.apply
+Apply
+false
+0
+false
+scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("pet/").+("$").+("id<[^/]+>"), "controllers.HomeController.getPetById(id:String)")
+
+52
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2010
+2019
+50
+<nosymbol>
+Literal
+false
+0
+false
+"GET"
+
+53
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2021
+2032
+50
+router.Routes.prefix
+Select
+false
+0
+false
+this.prefix
+
+54
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2034
+2072
+50
+<nosymbol>
+Literal
+false
+0
+false
+"controllers.HomeController.index"
+
+55
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2009
+2073
+50
+scala.Tuple3.apply
+Apply
+false
+0
+false
+scala.Tuple3.apply[String, String, String]("GET", this.prefix, "controllers.HomeController.index")
+
+56
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2080
+2089
+51
+<nosymbol>
+Literal
+false
+0
+false
+"GET"
+
+57
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2091
+2187
+51
+java.lang.String.+
+Apply
+false
+0
+false
+this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("assets/").+("$").+("file<.+>")
+
+58
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2189
+2260
+51
+<nosymbol>
+Literal
+false
+0
+false
+"controllers.Assets.versioned(path:String = \"/public\", file:Asset)"
+
+59
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2079
+2261
+51
+scala.Tuple3.apply
+Apply
+false
+0
+false
+scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("assets/").+("$").+("file<.+>"), "controllers.Assets.versioned(path:String = \"/public\", file:Asset)")
+
+60
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2267
+2270
+52
+scala.collection.immutable.Nil
+Select
+false
+0
+false
+scala.collection.immutable.Nil
+
+61
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2284
+2318
+53
+scala.collection.immutable.List.empty
+TypeApply
+false
+0
+false
+scala.collection.immutable.List.empty[(String, String, String)]
+
+62
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2331
+2350
+53
+scala.Any.asInstanceOf
+TypeApply
+false
+0
+false
+e.asInstanceOf[Any]
+
+63
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2388
+2426
+54
+scala.Any.asInstanceOf
+TypeApply
+false
+0
+false
+r.asInstanceOf[(String, String, String)]
+
+64
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2385
+2385
+54
+scala.collection.immutable.List.canBuildFrom
+TypeApply
+false
+0
+false
+immutable.this.List.canBuildFrom[(String, String, String)]
+
+65
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2383
+2426
+54
+scala.collection.SeqLike.:+
+ApplyToImplicitArgs
+false
+0
+false
+s.:+[(String, String, String), List[(String, String, String)]](r.asInstanceOf[(String, String, String)])(immutable.this.List.canBuildFrom[(String, String, String)])
+
+66
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2446
+2490
+55
+scala.Any.asInstanceOf
+TypeApply
+false
+0
+false
+l.asInstanceOf[List[(String, String, String)]]
+
+67
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2443
+2443
+55
+scala.collection.immutable.List.canBuildFrom
+TypeApply
+false
+0
+false
+immutable.this.List.canBuildFrom[(String, String, String)]
+
+68
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+2441
+2490
+55
+scala.collection.immutable.List.++
+ApplyToImplicitArgs
+false
+0
+false
+s.++[(String, String, String), List[(String, String, String)]](l.asInstanceOf[List[(String, String, String)]])(immutable.this.List.canBuildFrom[(String, String, String)])
+
+69
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+documentation
+1315
+2495
+53
+scala.collection.LinearSeqOptimized.foldLeft
+Apply
+false
+0
+false
+scala.collection.immutable.List.apply[Product with Serializable](scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("swagger.json"), "controllers.ApiHelpController.getResources"), scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("docs/"), "controllers.Assets.at(path:String = \"/public/swagger\", file:String = \"index.html\")"), scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("docs/").+("$").+("file<.+>"), "controllers.Assets.at(path:String = \"/public/swagger\", file:String)"), scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("pet/").+("$").+("id<[^/]+>"), "controllers.HomeController.getPetById(id:String)"), scala.Tuple3.apply[String, String, String]("GET", this.prefix, "controllers.HomeController.index"), scala.Tuple3.apply[String, String, String]("GET", this.prefix.+(if (this.prefix.endsWith("/"))
+  ""
+else
+  "/").+("assets/").+("$").+("file<.+>"), "controllers.Assets.versioned(path:String = \"/public\", file:Asset)"), scala.collection.immutable.Nil).foldLeft[List[(String, String, String)]](scala.collection.immutable.List.empty[(String, String, String)])(((s: List[(String, String, String)], e: Product with Serializable) => e.asInstanceOf[Any] match {
+  case (r @ (_1: Any, _2: Any, _3: Any)(Any, Any, Any)(_, _, _)) => s.:+[(String, String, String), List[(String, String, String)]](r.asInstanceOf[(String, String, String)])(immutable.this.List.canBuildFrom[(String, String, String)])
+  case (l @ _) => s.++[(String, String, String), List[(String, String, String)]](l.asInstanceOf[List[(String, String, String)]])(immutable.this.List.canBuildFrom[(String, String, String)])
+}))
+
+70
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6415
+6447
+173
+controllers.ApiHelpController.getResources
+Select
+false
+0
+false
+Routes.this.ApiHelpController_0.getResources
+
+71
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6358
+6448
+173
+play.core.routing.HandlerInvoker.call
+Apply
+false
+0
+false
+Routes.this.controllers_ApiHelpController_getResources0_invoker.call(Routes.this.ApiHelpController_0.getResources)
+
+72
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6342
+6456
+172
+play.core.routing.GeneratedRouter.call
+Apply
+false
+0
+false
+Routes.this.call(Routes.this.controllers_ApiHelpController_getResources0_invoker.call(Routes.this.ApiHelpController_0.getResources))
+
+73
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6551
+6557
+178
+<nosymbol>
+Literal
+false
+0
+false
+"path"
+
+74
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6559
+6583
+178
+scala.util.Right.apply
+Apply
+false
+0
+false
+scala.`package`.Right.apply[Nothing, String]("/public/swagger")
+
+75
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6537
+6584
+178
+play.core.routing.Param.apply
+Apply
+false
+0
+false
+play.core.routing.Param.apply[String]("path", scala.`package`.Right.apply[Nothing, String]("/public/swagger"))
+
+76
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6600
+6606
+178
+<nosymbol>
+Literal
+false
+0
+false
+"file"
+
+77
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6608
+6627
+178
+scala.util.Right.apply
+Apply
+false
+0
+false
+scala.`package`.Right.apply[Nothing, String]("index.html")
+
+78
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6586
+6628
+178
+play.core.routing.Param.apply
+Apply
+false
+0
+false
+play.core.routing.Param.apply[String]("file", scala.`package`.Right.apply[Nothing, String]("index.html"))
+
+79
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6701
+6701
+179
+controllers.AssetsBuilder.at$default$3
+Select
+false
+0
+false
+Routes.this.Assets_1.at$default$3
+
+80
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6692
+6715
+179
+controllers.AssetsBuilder.at
+Apply
+false
+0
+false
+Routes.this.Assets_1.at(path, file, Routes.this.Assets_1.at$default$3)
+
+81
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6656
+6716
+179
+play.core.routing.HandlerInvoker.call
+Apply
+false
+0
+false
+Routes.this.controllers_Assets_at1_invoker.call(Routes.this.Assets_1.at(path, file, Routes.this.Assets_1.at$default$3))
+
+82
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6532
+6724
+178
+play.core.routing.GeneratedRouter.call
+Apply
+false
+0
+false
+Routes.this.call[String, String](play.core.routing.Param.apply[String]("path", scala.`package`.Right.apply[Nothing, String]("/public/swagger")), play.core.routing.Param.apply[String]("file", scala.`package`.Right.apply[Nothing, String]("index.html")))(((path: String, file: String) => Routes.this.controllers_Assets_at1_invoker.call(Routes.this.Assets_1.at(path, file, Routes.this.Assets_1.at$default$3))))
+
+83
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6819
+6825
+184
+<nosymbol>
+Literal
+false
+0
+false
+"path"
+
+84
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6827
+6851
+184
+scala.util.Right.apply
+Apply
+false
+0
+false
+scala.`package`.Right.apply[Nothing, String]("/public/swagger")
+
+85
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6805
+6852
+184
+play.core.routing.Param.apply
+Apply
+false
+0
+false
+play.core.routing.Param.apply[String]("path", scala.`package`.Right.apply[Nothing, String]("/public/swagger"))
+
+86
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6878
+6884
+184
+<nosymbol>
+Literal
+false
+0
+false
+"file"
+
+87
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6886
+6890
+184
+scala.None
+Select
+false
+0
+false
+scala.None
+
+88
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6877
+6877
+184
+play.api.mvc.PathBindable.bindableString
+Select
+false
+0
+false
+mvc.this.PathBindable.bindableString
+
+89
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6854
+6891
+184
+play.core.routing.RouteParams.fromPath
+ApplyToImplicitArgs
+false
+0
+false
+params.fromPath[String]("file", scala.None)(mvc.this.PathBindable.bindableString)
+
+90
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6964
+6964
+185
+controllers.AssetsBuilder.at$default$3
+Select
+false
+0
+false
+Routes.this.Assets_1.at$default$3
+
+91
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6955
+6978
+185
+controllers.AssetsBuilder.at
+Apply
+false
+0
+false
+Routes.this.Assets_1.at(path, file, Routes.this.Assets_1.at$default$3)
+
+92
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6919
+6979
+185
+play.core.routing.HandlerInvoker.call
+Apply
+false
+0
+false
+Routes.this.controllers_Assets_at2_invoker.call(Routes.this.Assets_1.at(path, file, Routes.this.Assets_1.at$default$3))
+
+93
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6800
+6987
+184
+play.core.routing.GeneratedRouter.call
+Apply
+false
+0
+false
+Routes.this.call[String, String](play.core.routing.Param.apply[String]("path", scala.`package`.Right.apply[Nothing, String]("/public/swagger")), params.fromPath[String]("file", scala.None)(mvc.this.PathBindable.bindableString))(((path: String, file: String) => Routes.this.controllers_Assets_at2_invoker.call(Routes.this.Assets_1.at(path, file, Routes.this.Assets_1.at$default$3))))
+
+94
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7109
+7113
+190
+<nosymbol>
+Literal
+false
+0
+false
+"id"
+
+95
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7115
+7119
+190
+scala.None
+Select
+false
+0
+false
+scala.None
+
+96
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7108
+7108
+190
+play.api.mvc.PathBindable.bindableString
+Select
+false
+0
+false
+mvc.this.PathBindable.bindableString
+
+97
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7085
+7120
+190
+play.core.routing.RouteParams.fromPath
+ApplyToImplicitArgs
+false
+0
+false
+params.fromPath[String]("id", scala.None)(mvc.this.PathBindable.bindableString)
+
+98
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7192
+7223
+191
+controllers.HomeController.getPetById
+Apply
+false
+0
+false
+Routes.this.HomeController_2.getPetById(id)
+
+99
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7140
+7224
+191
+play.core.routing.HandlerInvoker.call
+Apply
+false
+0
+false
+Routes.this.controllers_HomeController_getPetById3_invoker.call(Routes.this.HomeController_2.getPetById(id))
+
+100
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7080
+7232
+190
+play.core.routing.GeneratedRouter.call
+Apply
+false
+0
+false
+Routes.this.call[String](params.fromPath[String]("id", scala.None)(mvc.this.PathBindable.bindableString))(((id: String) => Routes.this.controllers_HomeController_getPetById3_invoker.call(Routes.this.HomeController_2.getPetById(id))))
+
+101
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7383
+7405
+197
+controllers.HomeController.index
+Apply
+false
+0
+false
+Routes.this.HomeController_2.index()
+
+102
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7336
+7406
+197
+play.core.routing.HandlerInvoker.call
+Apply
+false
+0
+false
+Routes.this.controllers_HomeController_index4_invoker.call(Routes.this.HomeController_2.index())
+
+103
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7320
+7414
+196
+play.core.routing.GeneratedRouter.call
+Apply
+false
+0
+false
+Routes.this.call(Routes.this.controllers_HomeController_index4_invoker.call(Routes.this.HomeController_2.index()))
+
+104
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7517
+7523
+202
+<nosymbol>
+Literal
+false
+0
+false
+"path"
+
+105
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7525
+7541
+202
+scala.util.Right.apply
+Apply
+false
+0
+false
+scala.`package`.Right.apply[Nothing, String]("/public")
+
+106
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7503
+7542
+202
+play.core.routing.Param.apply
+Apply
+false
+0
+false
+play.core.routing.Param.apply[String]("path", scala.`package`.Right.apply[Nothing, String]("/public"))
+
+107
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7567
+7573
+202
+<nosymbol>
+Literal
+false
+0
+false
+"file"
+
+108
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7575
+7579
+202
+scala.None
+Select
+false
+0
+false
+scala.None
+
+109
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7566
+7566
+202
+play.core.routing.ReverseRouteContext.empty
+Select
+false
+0
+false
+routing.this.ReverseRouteContext.empty
+
+110
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7566
+7566
+202
+controllers.Assets.Asset.assetPathBindable
+ApplyToImplicitArgs
+false
+0
+false
+Assets.this.Asset.assetPathBindable(routing.this.ReverseRouteContext.empty)
+
+111
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7544
+7580
+202
+play.core.routing.RouteParams.fromPath
+ApplyToImplicitArgs
+false
+0
+false
+params.fromPath[controllers.Assets.Asset]("file", scala.None)(Assets.this.Asset.assetPathBindable(routing.this.ReverseRouteContext.empty))
+
+112
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7651
+7681
+203
+controllers.AssetsBuilder.versioned
+Apply
+false
+0
+false
+Routes.this.Assets_1.versioned(path, file)
+
+113
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7608
+7682
+203
+play.core.routing.HandlerInvoker.call
+Apply
+false
+0
+false
+Routes.this.controllers_Assets_versioned5_invoker.call(Routes.this.Assets_1.versioned(path, file))
+
+114
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+7498
+7690
+202
+play.core.routing.GeneratedRouter.call
+Apply
+false
+0
+false
+Routes.this.call[String, controllers.Assets.Asset](play.core.routing.Param.apply[String]("path", scala.`package`.Right.apply[Nothing, String]("/public")), params.fromPath[controllers.Assets.Asset]("file", scala.None)(Assets.this.Asset.assetPathBindable(routing.this.ReverseRouteContext.empty)))(((path: String, file: controllers.Assets.Asset) => Routes.this.controllers_Assets_versioned5_invoker.call(Routes.this.Assets_1.versioned(path, file))))
+
+115
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/Routes.scala
+router
+Routes
+Class
+router.Routes
+routes
+6244
+6244
+168
+router.Routes.$anonfun.<init>
+Apply
+false
+0
+false
+new $anonfun()
+
+116
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/RoutesPrefix.scala
+router
+RoutesPrefix
+Object
+router.RoutesPrefix
+<none>
+207
+210
+8
+<nosymbol>
+Literal
+false
+0
+false
+"/"
+
+117
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/RoutesPrefix.scala
+router
+RoutesPrefix
+Object
+router.RoutesPrefix
+setPrefix
+256
+267
+10
+router.RoutesPrefix._prefix_=
+Apply
+false
+0
+false
+RoutesPrefix.this._prefix_=(p)
+
+118
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/RoutesPrefix.scala
+router
+RoutesPrefix
+Object
+router.RoutesPrefix
+prefix
+299
+306
+12
+router.RoutesPrefix._prefix
+Select
+false
+0
+false
+RoutesPrefix.this._prefix
+
+119
+/Users/collib01/share/proj/ginger/target/scala-2.12/routes/main/router/RoutesPrefix.scala
+router
+RoutesPrefix
+Object
+router.RoutesPrefix
+<none>
+357
+363
+13
+router.RoutesPrefix.prefix
+Select
+false
+0
+false
+RoutesPrefix.this.prefix
+
+120
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+801
+827
+26
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+index.this.format.raw("\n")
+
+121
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+850
+867
+27
+<nosymbol>
+Literal
+false
+0
+false
+"Welcome to Play"
+
+122
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+897
+926
+27
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+index.this.format.raw("\n  ")
+
+123
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+927
+978
+28
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+index.this.format.raw("<h1>Welcome to Play!</h1>\n")
+
+124
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+888
+979
+27
+scala.collection.generic.GenericCompanion.apply
+Apply
+false
+0
+false
+scala.collection.Seq.apply[Any](index.this.format.raw("\n  "), index.this.format.raw("<h1>Welcome to Play!</h1>\n"))
+
+125
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+878
+980
+27
+play.twirl.api.BaseScalaTemplate._display_
+ApplyToImplicitArgs
+false
+0
+false
+index.this._display_(scala.collection.Seq.apply[Any](index.this.format.raw("\n  "), index.this.format.raw("<h1>Welcome to Play!</h1>\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))
+
+126
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+845
+981
+27
+views.html.main.apply
+Apply
+false
+0
+false
+main.apply("Welcome to Play")(index.this._display_(scala.collection.Seq.apply[Any](index.this.format.raw("\n  "), index.this.format.raw("<h1>Welcome to Play!</h1>\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])))
+
+127
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+828
+982
+27
+play.twirl.api.BaseScalaTemplate._display_
+Apply
+false
+0
+false
+index.this._display_(main.apply("Welcome to Play")(index.this._display_(scala.collection.Seq.apply[Any](index.this.format.raw("\n  "), index.this.format.raw("<h1>Welcome to Play!</h1>\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))))
+
+128
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+983
+1009
+29
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+index.this.format.raw("\n")
+
+129
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+792
+1010
+26
+scala.collection.generic.GenericCompanion.apply
+Apply
+false
+0
+false
+scala.collection.Seq.apply[Any](index.this.format.raw("\n"), index.this._display_(main.apply("Welcome to Play")(index.this._display_(scala.collection.Seq.apply[Any](index.this.format.raw("\n  "), index.this.format.raw("<h1>Welcome to Play!</h1>\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])))), index.this.format.raw("\n"))
+
+130
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+apply
+770
+1024
+22
+play.twirl.api.BaseScalaTemplate._display_
+ApplyToImplicitArgs
+false
+0
+false
+index.this._display_(scala.collection.Seq.apply[Any](index.this.format.raw("\n"), index.this._display_(main.apply("Welcome to Play")(index.this._display_(scala.collection.Seq.apply[Any](index.this.format.raw("\n  "), index.this.format.raw("<h1>Welcome to Play!</h1>\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])))), index.this.format.raw("\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))
+
+131
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+render
+1085
+1092
+35
+views.html.index.apply
+Apply
+false
+0
+false
+index.this.apply()
+
+132
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/index.template.scala
+views.html
+index
+Object
+views.html.index
+f
+1155
+1162
+37
+views.html.index.apply
+Apply
+false
+0
+false
+index.this.apply()
+
+133
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1094
+1120
+31
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\n")
+
+134
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1121
+1198
+32
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        ")
+
+135
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1199
+1235
+35
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\n        ")
+
+136
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1236
+1269
+36
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("<title>")
+
+137
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1270
+1295
+36
+play.twirl.api.BaseScalaTemplate._display_
+Apply
+false
+0
+false
+main.this._display_(title)
+
+138
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1296
+1384
+36
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("</title>\n        <link rel=\"stylesheet\" media=\"screen\" href=\"")
+
+139
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1437
+1459
+37
+controllers.Assets.Asset.string2Asset
+ApplyImplicitView
+false
+0
+false
+Assets.this.Asset.string2Asset("stylesheets/main.css")
+
+140
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1404
+1460
+37
+controllers.ReverseAssets.versioned
+Apply
+false
+0
+false
+controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("stylesheets/main.css"))
+
+141
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1385
+1461
+37
+play.twirl.api.BaseScalaTemplate._display_
+ApplyToImplicitArgs
+false
+0
+false
+main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("stylesheets/main.css")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))
+
+142
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1462
+1550
+37
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\">\n        <link rel=\"shortcut icon\" type=\"image/png\" href=\"")
+
+143
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1603
+1623
+38
+controllers.Assets.Asset.string2Asset
+ApplyImplicitView
+false
+0
+false
+Assets.this.Asset.string2Asset("images/favicon.png")
+
+144
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1570
+1624
+38
+controllers.ReverseAssets.versioned
+Apply
+false
+0
+false
+controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("images/favicon.png"))
+
+145
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1551
+1625
+38
+play.twirl.api.BaseScalaTemplate._display_
+ApplyToImplicitArgs
+false
+0
+false
+main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("images/favicon.png")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))
+
+146
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1626
+1689
+38
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\">\n\n    </head>\n    <body>\n        ")
+
+147
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1690
+1726
+42
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\n        ")
+
+148
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1727
+1754
+43
+play.twirl.api.BaseScalaTemplate._display_
+Apply
+false
+0
+false
+main.this._display_(content)
+
+149
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1755
+1790
+43
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\n\n      ")
+
+150
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1791
+1830
+45
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("<script src=\"")
+
+151
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1883
+1904
+45
+controllers.Assets.Asset.string2Asset
+ApplyImplicitView
+false
+0
+false
+Assets.this.Asset.string2Asset("javascripts/main.js")
+
+152
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1850
+1905
+45
+controllers.ReverseAssets.versioned
+Apply
+false
+0
+false
+controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("javascripts/main.js"))
+
+153
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1831
+1906
+45
+play.twirl.api.BaseScalaTemplate._display_
+ApplyToImplicitArgs
+false
+0
+false
+main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("javascripts/main.js")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))
+
+154
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1907
+1989
+45
+play.twirl.api.Format.raw
+Apply
+false
+0
+false
+main.this.format.raw("\" type=\"text/javascript\"></script>\n    </body>\n</html>\n")
+
+155
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1085
+1990
+31
+scala.collection.generic.GenericCompanion.apply
+Apply
+false
+0
+false
+scala.collection.Seq.apply[Any](main.this.format.raw("\n"), main.this.format.raw("<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        "), main.this.format.raw("\n        "), main.this.format.raw("<title>"), main.this._display_(title), main.this.format.raw("</title>\n        <link rel=\"stylesheet\" media=\"screen\" href=\""), main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("stylesheets/main.css")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])), main.this.format.raw("\">\n        <link rel=\"shortcut icon\" type=\"image/png\" href=\""), main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("images/favicon.png")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])), main.this.format.raw("\">\n\n    </head>\n    <body>\n        "), main.this.format.raw("\n        "), main.this._display_(content), main.this.format.raw("\n\n      "), main.this.format.raw("<script src=\""), main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("javascripts/main.js")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])), main.this.format.raw("\" type=\"text/javascript\"></script>\n    </body>\n</html>\n"))
+
+156
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+apply
+1063
+2004
+27
+play.twirl.api.BaseScalaTemplate._display_
+ApplyToImplicitArgs
+false
+0
+false
+main.this._display_(scala.collection.Seq.apply[Any](main.this.format.raw("\n"), main.this.format.raw("<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        "), main.this.format.raw("\n        "), main.this.format.raw("<title>"), main.this._display_(title), main.this.format.raw("</title>\n        <link rel=\"stylesheet\" media=\"screen\" href=\""), main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("stylesheets/main.css")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])), main.this.format.raw("\">\n        <link rel=\"shortcut icon\" type=\"image/png\" href=\""), main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("images/favicon.png")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])), main.this.format.raw("\">\n\n    </head>\n    <body>\n        "), main.this.format.raw("\n        "), main.this._display_(content), main.this.format.raw("\n\n      "), main.this.format.raw("<script src=\""), main.this._display_(controllers.routes.Assets.versioned(Assets.this.Asset.string2Asset("javascripts/main.js")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable])), main.this.format.raw("\" type=\"text/javascript\"></script>\n    </body>\n</html>\n")))((ClassTag.apply[play.twirl.api.HtmlFormat.Appendable](classOf[play.twirl.api.Html]): scala.reflect.ClassTag[play.twirl.api.HtmlFormat.Appendable]))
+
+157
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+render
+2090
+2111
+53
+views.html.main.apply
+Apply
+false
+0
+false
+main.this.apply(title)(content)
+
+158
+/Users/collib01/share/proj/ginger/target/scala-2.12/twirl/main/views/html/main.template.scala
+views.html
+main
+Object
+views.html.main
+f
+2208
+2229
+55
+views.html.main.apply
+Apply
+false
+0
+false
+main.this.apply(title)(content)
+

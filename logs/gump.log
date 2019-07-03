@@ -1,0 +1,144 @@
+2019-07-03 11:44:52.247-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-13] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 11:44:52.251-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-13] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 11:44:52.254-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-13] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 11:44:52.258-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-13] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 11:44:52.258-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-13] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 11:44:52.354-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-13] INFO swagger: - Swagger - initialization done.
+2019-07-03 11:44:52.355-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-13] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 11:54:20.409-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-4] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 11:54:20.456-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 11:54:20.461-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 11:54:20.540-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 11:54:20.545-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 11:54:21.005-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - initialization done.
+2019-07-03 11:54:21.009-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 11:54:21.194-05 INFO B[application-akka.actor.default-dispatcher-2] INFO controllers.HomeController: - Index called 
+2019-07-03 11:55:22.653-05 INFO B[play-dev-mode-shutdown-hook-1] INFO play.core.server.AkkaHttpServer: - Stopping server...
+2019-07-03 11:55:22.671-05 INFO B[application-akka.actor.default-dispatcher-5] INFO swagger: - Swagger - stopped.
+2019-07-03 11:56:56.353-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-4] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 11:56:56.396-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 11:56:56.401-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 11:56:56.476-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 11:56:56.479-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 11:56:56.969-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - initialization done.
+2019-07-03 11:56:56.974-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 12:13:05.589-05 INFO B[play-dev-mode-shutdown-hook-1] INFO play.core.server.AkkaHttpServer: - Stopping server...
+2019-07-03 12:13:05.653-05 INFO B[application-akka.actor.default-dispatcher-3] INFO swagger: - Swagger - stopped.
+2019-07-03 12:13:51.614-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-4] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 12:13:51.660-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 12:13:51.665-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 12:13:51.761-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 12:13:51.765-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 12:13:52.210-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - initialization done.
+2019-07-03 12:13:52.215-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-4] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 12:44:32.598-05 INFO B[application-akka.actor.default-dispatcher-13] INFO swagger: - Swagger - stopped.
+2019-07-03 12:44:32.885-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-54] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 12:44:32.890-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-54] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 12:44:32.892-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-54] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 12:44:32.900-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-54] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 12:44:32.901-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-54] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 12:44:32.968-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-54] INFO swagger: - Swagger - initialization done.
+2019-07-03 12:44:32.968-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-54] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 14:21:39.187-05 INFO B[play-dev-mode-shutdown-hook-1] INFO play.core.server.AkkaHttpServer: - Stopping server...
+2019-07-03 14:21:45.384-05 INFO B[application-akka.actor.default-dispatcher-4] INFO swagger: - Swagger - stopped.
+2019-07-03 14:21:45.653-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-83] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 14:21:45.660-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-83] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 14:21:45.663-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-83] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 14:21:45.671-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-83] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 14:21:45.671-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-83] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 14:21:45.776-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-83] INFO swagger: - Swagger - initialization done.
+2019-07-03 14:21:45.776-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-83] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 14:21:45.777-05 INFO B[application-akka.actor.default-dispatcher-3] INFO swagger: - Swagger - stopped.
+2019-07-03 14:32:57.460-05 DEBUG B[play-dev-mode-akka.actor.default-dispatcher-3] DEBUG controllers.AssetsConfiguration: - Using the following cache configuration for assets:
+	 enableCaching = false
+	 enableCacheControl = false
+	 defaultCacheControl = public, max-age=3600
+	 aggressiveCacheControl = public, max-age=31536000, immutable
+	 configuredCacheControl:
+
+
+2019-07-03 14:32:57.537-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-3] INFO play.api.http.EnabledFilters: - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2019-07-03 14:32:57.543-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-3] INFO swagger: - Swagger - starting initialisation...
+2019-07-03 14:32:57.638-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-3] INFO swagger: - ControllerScanner - looking for controllers with API annotation
+2019-07-03 14:32:57.641-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-3] INFO swagger: - Found API controller:  controllers.HomeController
+2019-07-03 14:32:58.206-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-3] INFO swagger: - Swagger - initialization done.
+2019-07-03 14:32:58.211-05 INFO B[play-dev-mode-akka.actor.default-dispatcher-3] INFO play.api.Play: - Application started (Dev) (no global state)
+2019-07-03 14:32:58.401-05 WARN B[application-akka.actor.default-dispatcher-4] WARN p.api.mvc.DefaultJWTCookieDataCodec: - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2019-07-03 14:32:58.404-05 INFO B[application-akka.actor.default-dispatcher-4] INFO p.api.mvc.DefaultJWTCookieDataCodec: - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.

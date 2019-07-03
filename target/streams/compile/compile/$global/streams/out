@@ -1,0 +1,12 @@
+[0m[[0m[0minfo[0m] [0m[0mCleaning datadir [/Users/collib01/share/proj/ginger/target/scala-2.12/scoverage-data][0m
+[0m[[0m[0minfo[0m] [0m[0mBeginning coverage instrumentation[0m
+[0m[[0m[0minfo[0m] [0m[0mInstrumentation completed [158 statements][0m
+[0m[[0m[0minfo[0m] [0m[0mWrote instrumentation file [/Users/collib01/share/proj/ginger/target/scala-2.12/scoverage-data/scoverage.coverage][0m
+[0m[[0m[0minfo[0m] [0m[0mWill write measurement data to [/Users/collib01/share/proj/ginger/target/scala-2.12/scoverage-data][0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala:31:54: parameter value request in value $anonfun is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m  def index():Action[AnyContent] = Action { implicit request: Request[AnyContent] =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                                     ^[0m
+[0m[[0m[33mwarn[0m] [0m[0m/Users/collib01/share/proj/ginger/app/controllers/HomeController.scala:42:14: parameter value request in value $anonfun is never used[0m
+[0m[[0m[33mwarn[0m] [0m[0m    implicit request:Request[AnyContent] =>[0m
+[0m[[0m[33mwarn[0m] [0m[0m             ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mtwo warnings found[0m
